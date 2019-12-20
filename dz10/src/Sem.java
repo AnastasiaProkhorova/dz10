@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+//Напишите программу, вводящую последовательность
+//целых чисел, и печатающую число элементов, больших предыдущего
+//(первый элемент последовательности тоже считается таким).
 public class Sem {
     static void bolshe() {
         Scanner in = new Scanner(System.in);
@@ -17,6 +19,7 @@ public class Sem {
             if (i > x) {
                 counter++;
             }
+            System.out.println("число элементов, больших предыдущего: "+counter);
             x = i;
             y = in.next();
         }

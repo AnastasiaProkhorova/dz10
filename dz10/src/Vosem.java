@@ -1,25 +1,28 @@
 import java.util.Scanner;
-
+//Напишите программу, вводящую последовательность целых чисел,
+//и печатающую второй по величине ее элемент и No, если такого элемента нет.
 public class Vosem {
     static void vtoroi() {
         Scanner in = new Scanner(System.in);
-        System.out.println("введите числа");
+        System.out.println("Введите числа");
         String y = in.next();
         int i = new Integer(y);
-        int min2 = i, min = min2;
+        int max = i, max2 = 0;
         while (true) {
             try {
                 i = new Integer(y);
             } catch (NumberFormatException e) {
                 break;
             }
-            if (i<min){
-                min2 = min;
-                min = i;
-            } else if(min<i && i<min2)
-                min2 = i;
+            if (i > max) {
+                max2 = max;
+                max = i;
+            } else if (max > i && i > max2) {
+                max2 = i;
+            }
+            System.out.println("Второе по величине число: " + max2);
             y = in.next();
         }
-        System.out.println("Второе по величине число: "+min2);
+        System.out.println(max2);
     }
 }

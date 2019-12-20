@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+//Напишите программу, вводящую последовательность
+//целых чисел, и печатающую количество ее максимальных элементов.
 public class Odin {
     static void kmax() {
         Scanner in = new Scanner(System.in);

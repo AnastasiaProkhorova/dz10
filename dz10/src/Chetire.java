@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+//Напишите программу, вводящую последовательность
+//целых чисел, и печатающую максимальное число идущих подряд одинаковых элементов.
 public class Chetire {
     static void odinakovo() {
         Scanner in = new Scanner(System.in);

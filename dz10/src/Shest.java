@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+//Напишите программу, вводящую последовательность
+//целых чисел, и печатающую номер первого элемента, равного нулю, и
+//нуль при отсутствии такого элемента в последовательности.
 public class Shest {
     static void nol() {
         Scanner in = new Scanner(System.in);
@@ -24,7 +26,9 @@ public class Shest {
                     ZeroID = ID;
                     System.out.println("номер первого элемента равного нулю: " + ZeroID);
                     g2 = false;
-                    break; }
+                    break; } else {
+                    System.out.println(0);
+                }
                 y = in.next();
                 ID++;
             }

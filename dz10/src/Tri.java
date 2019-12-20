@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+//Напишите программу, вводящую последовательность вещественных чисел,
+//и печатающую среднее арифметическое ее элементов
+//(для непустой последовательности).
 public class Tri {
     static void Sr() {
         Scanner in = new Scanner(System.in);
